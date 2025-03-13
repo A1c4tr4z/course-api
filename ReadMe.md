@@ -23,7 +23,8 @@
 1. **Клонируйте репозиторий:**
 
    ```bash
-   git clone https://github.com/your-username/course-api.git
+   git clone https://github.com/A1c4tr4z/course-api.git
+
    cd course-api
 
     Настройте базу данных:
