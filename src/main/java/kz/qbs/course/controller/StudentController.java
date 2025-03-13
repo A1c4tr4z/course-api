@@ -14,29 +14,29 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @GetMapping
-    public List<Student> getAllStudents() {
-        return studentService.getAllStudents();
-    }
+//    @GetMapping
+//    public List<Student> getAllStudents() {
+//        return studentService.getAllStudents();
+//    }
 
-    @GetMapping("/{id}")
-    public Student getStudentById(@PathVariable Long id) {
-        return studentService.getStudentById(id);
-    }
+//    @GetMapping("/{id}")
+//    public Student getStudentById(@PathVariable Long id) {
+//        return studentService.getStudentById(id);
+//    }
 
     @PostMapping("/register")
     public Student registerStudent(@RequestBody Student student, @RequestParam Long courseId) {
         return studentService.registerStudent(student, courseId);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteStudent(@PathVariable Long id) {
-        studentService.deleteStudent(id);
-    }
-
-    @GetMapping("/search")
-    public List<Student> searchStudent(@RequestParam String query) {
-        return studentService.searchStudents(query);
-    }
+//    @DeleteMapping("/{id}")
+//    public void deleteStudent(@PathVariable Long id) {
+//        studentService.deleteStudent(id);
+//    }
+//
+//    @GetMapping("/search")
+//    public List<Student> searchStudent(@RequestParam String query) {
+//        return studentService.searchStudents(query);
+//    }
 
 }

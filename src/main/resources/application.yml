@@ -24,3 +24,6 @@ spring:
   profiles:
     active: dev
 
+jwt:
+  secretKey: ${JWT_SECRET:default-secret-key}
+  expiration: 86400000

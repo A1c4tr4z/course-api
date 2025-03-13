@@ -24,18 +24,18 @@ public class CourseController {
     }
 
     @PostMapping
-    public Course createCourse(@RequestBody Course course){
+    public Course registerCourse(@RequestBody Course course){
         return courseService.createCourse(course);
     }
 
-    @PutMapping("/{id}")
-    public Course updateCourse(@PathVariable Long id, @RequestBody Course courseDetails){
-        return courseService.updateCourse(id, courseDetails);
-    }
-
-    @DeleteMapping("/{id}")
-    public void deleteCourse(@PathVariable Long id) {
-        courseService.deleteCourse(id);
-    }
+//    @PutMapping("/{id}")
+//    public Course updateCourse(@PathVariable Long id, @RequestBody Course courseDetails){
+//        return courseService.updateCourse(id, courseDetails);
+//    }
+//
+//    @DeleteMapping("/{id}")
+//    public void deleteCourse(@PathVariable Long id) {
+//        courseService.deleteCourse(id);
+//    }
 
 }
