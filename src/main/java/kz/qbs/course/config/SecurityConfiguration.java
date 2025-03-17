@@ -28,7 +28,7 @@ public class SecurityConfiguration {
                         "/v3/api-docs/**",
                         "/swagger-ui/**",
                         "/swagger-ui.html",
-                        "/api/course/**",
+                        "/api/courses/**",
                         "/api/students/**")
                         .permitAll()
                         .requestMatchers("/api/v1/admin/**").hasAuthority(Role.ADMIN.name())
